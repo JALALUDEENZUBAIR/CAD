@@ -1,0 +1,82 @@
+.post-info {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.post-title {
+    font-weight: 500;
+}
+.post-location {
+    color: rgb(92, 92, 92);
+}
+
+.post-container {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform .2s;
+}
+
+.post-container:hover {
+    transform: scale(1.05);
+}
+
+.all-posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.picture {
+    border: 2px solid rgb(52, 52, 52);
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+    .all-posts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 750px) {
+    .all-posts-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1249px) {
+    .all-posts-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1250px) {
+    .all-posts-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+header {
+    text-align: center;
+    font-weight: 700;
+    font-family: Roboto, Arial;
+    font-size: 60px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
